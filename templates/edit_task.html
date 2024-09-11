@@ -1,0 +1,7 @@
+<h2>Edit Task</h2>
+<form method="POST">
+    <label for="task_content">Task:</label>
+    <input type="text" id="task_content" name="task_content" value="{{ task.content }}">
+    <input type="submit" value="Save Changes">
+</form>
+<a href="{{ url_for('todo_list') }}">Back to To-Do List</a>
